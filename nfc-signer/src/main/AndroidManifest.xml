@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.signature.nfc.nfc_sign">
+
+    <uses-permission android:name="android.permission.NFC" />
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity
+            android:name="com.signature.nfc.lib.RsaApduActivity">
+        </activity>
+    </application>
+
+</manifest>
