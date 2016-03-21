@@ -1,6 +1,5 @@
 # nfc-signer-lib
-1. Include library to project:
-
+1) Include library to project
 ```gradle
 repositories {
     maven {
@@ -11,9 +10,7 @@ dependencies {
     compile 'com.signature.nfc.nfc_sign:nfc-signer:1.0.1'
 }
 ```
-
-2. Start reading card from your activity:
-
+2) Start reading card from your activity
 ```java
 Intent intent = new Intent(MainActivity.this, RsaApduActivity.class);
 Bundle bundle = new Bundle();
@@ -23,8 +20,7 @@ bundle.putString("key", /*SIGNATURE KEY ID*/);
 intent.putExtras(bundle);
 startActivityForResult( intent, READ_REQUEST_CODE);
 ```
-
-3. Handle callback with sign results:
+3) Handle callback with sign results
 ```java
 @Override
 protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -38,5 +34,4 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
   }
 }
 ```
-
 Simple example: https://github.com/jer1ch0/nfc-signer-demo
