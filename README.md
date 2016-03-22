@@ -1,11 +1,6 @@
 # nfc-signer-lib
 1) Include library to project
 ```gradle
-repositories {
-    maven {
-        url 'https://dl.bintray.com/jer1ch0/maven'
-    }
-}
 dependencies {
     compile 'com.signature.nfc.nfc_sign:nfc-signer:1.0.1'
 }
